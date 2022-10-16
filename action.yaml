@@ -1,0 +1,20 @@
+name: skynet-actions/upload-file
+description: Action for uploading a file to a Skynet platform.
+author: Sia Codelabs
+
+inputs:
+  portal:
+    description: Portal URL to use.
+    required: true
+    default: https://web3portal.com
+  path:
+    description: Path to the local file/directory to upload.
+    required: true
+
+outputs:
+  skylink:
+    description: Skylink to use for downloading.
+
+runs:
+  using: node16
+  main: dist/cjs/index.js
