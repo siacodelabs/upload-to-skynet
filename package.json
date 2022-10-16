@@ -21,7 +21,7 @@
     "@skynetlabs/skynet-nodejs": "^2.9.0"
   },
   "devDependencies": {
-    "@akromio/doubles": "file:../../../Akromio/nodejs-doubles/packages/doubles",
+    "@akromio/doubles": "^0.4.0",
     "@akromio/expected": "^0.4.3",
     "@akromio/expected-fs": "^0.4.2",
     "@types/mocha": "^10.0.0",
