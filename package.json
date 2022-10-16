@@ -1,6 +1,6 @@
 {
   "name": "upload-to-skynet",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Action for uploading files/directories to a Skynet platform.",
   "author": "Sia Codelabs",
   "repository": {
