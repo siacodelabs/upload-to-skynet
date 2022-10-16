@@ -1,4 +1,4 @@
-name: skynet-actions/upload-file
+name: Upload a File to Skynet
 description: Action for uploading a file to a Skynet platform.
 author: Sia Codelabs
 branding:
