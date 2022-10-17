@@ -5,7 +5,7 @@
   "author": "Sia Codelabs",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/siacodelabs/action-upload-file-to-skynet.git"
+    "url": "git+https://github.com/siacodelabs/upload-to-skynet.git"
   },
   "keywords": [
     "actions",
