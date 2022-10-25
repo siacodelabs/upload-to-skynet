@@ -3,12 +3,11 @@ name: CI
 on:
   push:
     branches:
-      - main
-      
-  pull_request:
-    branches:
-      - main
+      - "**"
+
+permissions:
+  contents: write
 
 jobs:
-  runTests:
+  unitTests:
     uses: siacodelabs/.github/.github/workflows/actions-ci.yaml@main

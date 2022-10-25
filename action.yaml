@@ -1,6 +1,7 @@
 name: Upload a File/Directory to Skynet
-description: Action for uploading a file to a Skynet platform.
+description: Action for uploading a file or a directory to a Skynet platform.
 author: Sia Codelabs
+
 branding:
   icon: upload
   color: gray-dark
