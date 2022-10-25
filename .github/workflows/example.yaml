@@ -1,0 +1,34 @@
+name: Example
+
+on: workflow_dispatch
+
+permissions:
+  contents: write
+
+jobs:
+  call:
+    runs-on: ubuntu-latest
+
+    env:
+      localFilePath: ${{ github.workspace }}/tests/data/hello-world.txt
+      skylink: sia://AAAFCzW_tyQKKJZL_xHXHWE-XwusklwWBSv9HFFtZhtecA
+    
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v3
+
+      - name: Upload file
+        id: uploadFile
+        uses: siacodelabs/upload-to-skynet@v1
+        with:
+          path: ${{ env.localFilePath }}
+      
+      - name: Check uploaded file
+        run: |
+          skylink=${{ steps.uploadFile.outputs.skylink }}
+          echo "Skylink: $skylink"
+
+          if [[ "${{ env.skylink }}" != "$skylink" ]]; then
+            echo "::error::Skylink returned should be ${{ env.skylink }}. Got: $skylink."
+            exit 1
+          fi
