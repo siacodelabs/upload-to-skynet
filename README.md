@@ -11,8 +11,8 @@ See [action.yaml](action.yaml)
 ```yaml
 steps:
   - name: Upload file to Skynet platform
-    uses: siacodelabs/upload-to-skynet
+    uses: siacodelabs/upload-to-skynet@v1
     with:
       portal: https://web3portal.com
-      path: ${{ github.workspace }}/tests/data/file.txt
+      path: /tmp/hello-world.txt
 ```
